@@ -1,0 +1,76 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "61eb6337d8b81e4b7d2e3c777573af5f",
+    "entities": [
+      {
+        "tableName": "products",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`logEntryId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `logEntryAction` TEXT, `logEntryTime` TEXT, `logEntryLongitude` REAL NOT NULL, `logEntryLatitude` REAL NOT NULL, `location` TEXT NOT NULL, `testObject` TEXT NOT NULL, `tripID` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "logEntryId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "logEntryAction",
+            "columnName": "logEntryAction",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "logEntryDate",
+            "columnName": "logEntryTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "logEntryLongitude",
+            "columnName": "logEntryLongitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "logEntryLatitude",
+            "columnName": "logEntryLatitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "location",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "testObject",
+            "columnName": "testObject",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tripID",
+            "columnName": "tripID",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "logEntryId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '61eb6337d8b81e4b7d2e3c777573af5f')"
+    ]
+  }
+}

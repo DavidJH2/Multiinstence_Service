@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 5,
+    "identityHash": "bad469fffaf32321ba3aa406ce76a820",
+    "entities": [
+      {
+        "tableName": "logEntryTable",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`logEntryId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `isArchived` INTEGER, `logEntryAction` TEXT, `logEntryTime` TEXT, `logEntryLatitude` REAL NOT NULL, `logEntryLongitude` REAL NOT NULL, `shiftID` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "logEntryId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isArchived",
+            "columnName": "isArchived",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "logEntryAction",
+            "columnName": "logEntryAction",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "logEntryDate",
+            "columnName": "logEntryTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "logEntryLatitude",
+            "columnName": "logEntryLatitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "logEntryLongitude",
+            "columnName": "logEntryLongitude",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiftID",
+            "columnName": "shiftID",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "logEntryId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bad469fffaf32321ba3aa406ce76a820')"
+    ]
+  }
+}

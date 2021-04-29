@@ -1,0 +1,37 @@
+<resources>
+	<string name="_1">1</string>
+	<string name="add">Pick Up</string>
+	<string name="app_name">Logger</string>
+	<string name="action_settings">Settings</string>
+	<string name="clear_all">Clear All</string>
+	<string name="customer_canceled_food">Customer Canceled Food</string>
+	<string name="current_shift">Current Shift:</string>
+	<string name="debug_clear_all_data">Clear All Data</string>
+	<string name="delete">Delete</string>
+	<string name="find">Drop Off</string>
+	<string name="food_pick_up">Food Pick UP</string>
+	<string name="food_droped_off">Food Droped Off</string>
+	<string name="food_accepted">Food Accepted</string>
+	<string name="food_canceled">Food Canceled</string>
+	<string name="fragment_1">Fragment 1</string>
+	<string name="hide_archive">Hide Archive</string>
+	<string name="new_shift">New Shift</string>
+	<string name="next_shift">Next Shift</string>
+	<string name="not_assigned">Not Assigned</string>
+	<string name="previous_shift">Previous Shift</string>
+	<string name="product_name">Product Name</string>
+	<string name="product_quantity">Product Quantity</string>
+	<string name="poperty_id">Poperty ID</string>
+	<string name="rider_picked_up">Rider Picked Up</string>
+	<string name="rider_accepted">Rider Accepted</string>
+	<string name="rider_droped_off">Rider Droped Off</string>
+	<string name="ride_canceled">Ride Canceled</string>
+	<string name="rider_canceled">Rider Canceled</string>
+	<string name="stationary_location_range">Stationary Location Range</string>
+	<string name="show_archive">Show Archive</string>
+	<string name="textview">TextView</string>
+	<string name="todo">TODO</string>
+	<string name="togglebutton">ToggleButton</string>
+	<string name="version">Version:</string>
+	<string name="shift">Shift</string>
+</resources>
